@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BCD1A18407756E7AD18B3AC /* libPods-HybridPoolUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCE648352AC8CEFA4334FB /* libPods-HybridPoolUITests.a */; };
+		56F7C716C785DA024565EF71 /* libPods-HybridPoolTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AAA9C03B840E24DF87A342 /* libPods-HybridPoolTests.a */; };
+		9215FE377AE0DA1B44D1DF92 /* libPods-HybridPool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B91C2BAE76C0ABD7E3D903 /* libPods-HybridPool.a */; };
+		DD2899E221E6EE9100601AA2 /* ListPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2899E121E6EE9000601AA2 /* ListPlugin.m */; };
+		DD4DBC7421E4059500992DB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC7321E4059500992DB6 /* AppDelegate.m */; };
+		DD4DBC7721E4059500992DB6 /* PoolsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC7621E4059500992DB6 /* PoolsTableViewController.m */; };
+		DD4DBC7A21E4059500992DB6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC7921E4059500992DB6 /* SecondViewController.m */; };
+		DD4DBC7D21E4059500992DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4DBC7B21E4059500992DB6 /* Main.storyboard */; };
+		DD4DBC7F21E4059B00992DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4DBC7E21E4059B00992DB6 /* Assets.xcassets */; };
+		DD4DBC8221E4059B00992DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4DBC8021E4059B00992DB6 /* LaunchScreen.storyboard */; };
+		DD4DBC8521E4059C00992DB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC8421E4059C00992DB6 /* main.m */; };
+		DD4DBC8F21E4059C00992DB6 /* HybridPoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC8E21E4059C00992DB6 /* HybridPoolTests.m */; };
+		DD4DBC9A21E4059C00992DB6 /* HybridPoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC9921E4059C00992DB6 /* HybridPoolUITests.m */; };
+		DD76A70E21E5539C007CC27E /* PoolsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD76A70C21E5539C007CC27E /* PoolsTableViewCell.m */; };
+		DD76A70F21E5539C007CC27E /* PoolsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD76A70D21E5539C007CC27E /* PoolsTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD4DBC8B21E4059C00992DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD4DBC6721E4059500992DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD4DBC6E21E4059500992DB6;
+			remoteInfo = HybridPool;
+		};
+		DD4DBC9621E4059C00992DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD4DBC6721E4059500992DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD4DBC6E21E4059500992DB6;
+			remoteInfo = HybridPool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05B91C2BAE76C0ABD7E3D903 /* libPods-HybridPool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HybridPool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC757A2EAA306C9051F3B2F /* Pods-HybridPoolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HybridPoolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HybridPoolUITests/Pods-HybridPoolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		18FCE648352AC8CEFA4334FB /* libPods-HybridPoolUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HybridPoolUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA5F257185CC20421015183 /* Pods-HybridPoolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HybridPoolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HybridPoolTests/Pods-HybridPoolTests.release.xcconfig"; sourceTree = "<group>"; };
+		65D988264AD14D7C08A9062F /* Pods-HybridPool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HybridPool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HybridPool/Pods-HybridPool.debug.xcconfig"; sourceTree = "<group>"; };
+		819EFD6CAC752364FDA22D68 /* Pods-HybridPoolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HybridPoolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HybridPoolTests/Pods-HybridPoolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94AAA9C03B840E24DF87A342 /* libPods-HybridPoolTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HybridPoolTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DCE77E8F98D1FF0AB8D02A /* Pods-HybridPoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HybridPoolUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HybridPoolUITests/Pods-HybridPoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB1CD42B0862B88A7181724B /* Pods-HybridPool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HybridPool.release.xcconfig"; path = "Pods/Target Support Files/Pods-HybridPool/Pods-HybridPool.release.xcconfig"; sourceTree = "<group>"; };
+		DD2899E021E6EE9000601AA2 /* ListPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPlugin.h; sourceTree = "<group>"; };
+		DD2899E121E6EE9000601AA2 /* ListPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPlugin.m; sourceTree = "<group>"; };
+		DD4DBC6F21E4059500992DB6 /* HybridPool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridPool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4DBC7221E4059500992DB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD4DBC7321E4059500992DB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD4DBC7521E4059500992DB6 /* PoolsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoolsTableViewController.h; sourceTree = "<group>"; };
+		DD4DBC7621E4059500992DB6 /* PoolsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoolsTableViewController.m; sourceTree = "<group>"; };
+		DD4DBC7821E4059500992DB6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		DD4DBC7921E4059500992DB6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		DD4DBC7C21E4059500992DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD4DBC7E21E4059B00992DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD4DBC8121E4059B00992DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD4DBC8321E4059C00992DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD4DBC8421E4059C00992DB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD4DBC8A21E4059C00992DB6 /* HybridPoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HybridPoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4DBC8E21E4059C00992DB6 /* HybridPoolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybridPoolTests.m; sourceTree = "<group>"; };
+		DD4DBC9021E4059C00992DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD4DBC9521E4059C00992DB6 /* HybridPoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HybridPoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4DBC9921E4059C00992DB6 /* HybridPoolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybridPoolUITests.m; sourceTree = "<group>"; };
+		DD4DBC9B21E4059C00992DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD76A70B21E5539C007CC27E /* PoolsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoolsTableViewCell.h; sourceTree = "<group>"; };
+		DD76A70C21E5539C007CC27E /* PoolsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoolsTableViewCell.m; sourceTree = "<group>"; };
+		DD76A70D21E5539C007CC27E /* PoolsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoolsTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD4DBC6C21E4059500992DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9215FE377AE0DA1B44D1DF92 /* libPods-HybridPool.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD4DBC8721E4059C00992DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F7C716C785DA024565EF71 /* libPods-HybridPoolTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD4DBC9221E4059C00992DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCD1A18407756E7AD18B3AC /* libPods-HybridPoolUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A380A380494C53E4EC529301 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05B91C2BAE76C0ABD7E3D903 /* libPods-HybridPool.a */,
+				94AAA9C03B840E24DF87A342 /* libPods-HybridPoolTests.a */,
+				18FCE648352AC8CEFA4334FB /* libPods-HybridPoolUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB0013286041230E99AB6A7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65D988264AD14D7C08A9062F /* Pods-HybridPool.debug.xcconfig */,
+				CB1CD42B0862B88A7181724B /* Pods-HybridPool.release.xcconfig */,
+				819EFD6CAC752364FDA22D68 /* Pods-HybridPoolTests.debug.xcconfig */,
+				5DA5F257185CC20421015183 /* Pods-HybridPoolTests.release.xcconfig */,
+				A7DCE77E8F98D1FF0AB8D02A /* Pods-HybridPoolUITests.debug.xcconfig */,
+				0AC757A2EAA306C9051F3B2F /* Pods-HybridPoolUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD4DBC6621E4059500992DB6 = {
+			isa = PBXGroup;
+			children = (
+				DD4DBC7121E4059500992DB6 /* HybridPool */,
+				DD4DBC8D21E4059C00992DB6 /* HybridPoolTests */,
+				DD4DBC9821E4059C00992DB6 /* HybridPoolUITests */,
+				DD4DBC7021E4059500992DB6 /* Products */,
+				BB0013286041230E99AB6A7D /* Pods */,
+				A380A380494C53E4EC529301 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD4DBC7021E4059500992DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD4DBC6F21E4059500992DB6 /* HybridPool.app */,
+				DD4DBC8A21E4059C00992DB6 /* HybridPoolTests.xctest */,
+				DD4DBC9521E4059C00992DB6 /* HybridPoolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD4DBC7121E4059500992DB6 /* HybridPool */ = {
+			isa = PBXGroup;
+			children = (
+				DD2899E021E6EE9000601AA2 /* ListPlugin.h */,
+				DD2899E121E6EE9000601AA2 /* ListPlugin.m */,
+				DD4DBC7221E4059500992DB6 /* AppDelegate.h */,
+				DD4DBC7321E4059500992DB6 /* AppDelegate.m */,
+				DD4DBC7521E4059500992DB6 /* PoolsTableViewController.h */,
+				DD4DBC7621E4059500992DB6 /* PoolsTableViewController.m */,
+				DD4DBC7821E4059500992DB6 /* SecondViewController.h */,
+				DD4DBC7921E4059500992DB6 /* SecondViewController.m */,
+				DD4DBC7B21E4059500992DB6 /* Main.storyboard */,
+				DD4DBC7E21E4059B00992DB6 /* Assets.xcassets */,
+				DD4DBC8021E4059B00992DB6 /* LaunchScreen.storyboard */,
+				DD4DBC8321E4059C00992DB6 /* Info.plist */,
+				DD4DBC8421E4059C00992DB6 /* main.m */,
+				DD76A70B21E5539C007CC27E /* PoolsTableViewCell.h */,
+				DD76A70C21E5539C007CC27E /* PoolsTableViewCell.m */,
+				DD76A70D21E5539C007CC27E /* PoolsTableViewCell.xib */,
+			);
+			path = HybridPool;
+			sourceTree = "<group>";
+		};
+		DD4DBC8D21E4059C00992DB6 /* HybridPoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD4DBC8E21E4059C00992DB6 /* HybridPoolTests.m */,
+				DD4DBC9021E4059C00992DB6 /* Info.plist */,
+			);
+			path = HybridPoolTests;
+			sourceTree = "<group>";
+		};
+		DD4DBC9821E4059C00992DB6 /* HybridPoolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD4DBC9921E4059C00992DB6 /* HybridPoolUITests.m */,
+				DD4DBC9B21E4059C00992DB6 /* Info.plist */,
+			);
+			path = HybridPoolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD4DBC6E21E4059500992DB6 /* HybridPool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4DBC9E21E4059C00992DB6 /* Build configuration list for PBXNativeTarget "HybridPool" */;
+			buildPhases = (
+				44A696832C4076112A483D84 /* [CP] Check Pods Manifest.lock */,
+				DD4DBC6B21E4059500992DB6 /* Sources */,
+				DD4DBC6C21E4059500992DB6 /* Frameworks */,
+				DD4DBC6D21E4059500992DB6 /* Resources */,
+				7247E6724B699CB1C1BB394C /* [CP] Embed Pods Frameworks */,
+				49A014EA3C35D79FC55F45CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HybridPool;
+			productName = HybridPool;
+			productReference = DD4DBC6F21E4059500992DB6 /* HybridPool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD4DBC8921E4059C00992DB6 /* HybridPoolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4DBCA121E4059C00992DB6 /* Build configuration list for PBXNativeTarget "HybridPoolTests" */;
+			buildPhases = (
+				CE8845E7D9C9159879DFCDF2 /* [CP] Check Pods Manifest.lock */,
+				DD4DBC8621E4059C00992DB6 /* Sources */,
+				DD4DBC8721E4059C00992DB6 /* Frameworks */,
+				DD4DBC8821E4059C00992DB6 /* Resources */,
+				B04534B3C7BFD62509EA2B02 /* [CP] Embed Pods Frameworks */,
+				5A209CC12797477DB0DB6AFE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD4DBC8C21E4059C00992DB6 /* PBXTargetDependency */,
+			);
+			name = HybridPoolTests;
+			productName = HybridPoolTests;
+			productReference = DD4DBC8A21E4059C00992DB6 /* HybridPoolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD4DBC9421E4059C00992DB6 /* HybridPoolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4DBCA421E4059C00992DB6 /* Build configuration list for PBXNativeTarget "HybridPoolUITests" */;
+			buildPhases = (
+				016E1279FEFC5949BFE5E0A6 /* [CP] Check Pods Manifest.lock */,
+				DD4DBC9121E4059C00992DB6 /* Sources */,
+				DD4DBC9221E4059C00992DB6 /* Frameworks */,
+				DD4DBC9321E4059C00992DB6 /* Resources */,
+				4B913051800B8F2A0BA0BD6C /* [CP] Embed Pods Frameworks */,
+				80CCB26DFAC14C71C8413448 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD4DBC9721E4059C00992DB6 /* PBXTargetDependency */,
+			);
+			name = HybridPoolUITests;
+			productName = HybridPoolUITests;
+			productReference = DD4DBC9521E4059C00992DB6 /* HybridPoolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD4DBC6721E4059500992DB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Eamon White";
+				TargetAttributes = {
+					DD4DBC6E21E4059500992DB6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					DD4DBC8921E4059C00992DB6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DD4DBC6E21E4059500992DB6;
+					};
+					DD4DBC9421E4059C00992DB6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DD4DBC6E21E4059500992DB6;
+					};
+				};
+			};
+			buildConfigurationList = DD4DBC6A21E4059500992DB6 /* Build configuration list for PBXProject "HybridPool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD4DBC6621E4059500992DB6;
+			productRefGroup = DD4DBC7021E4059500992DB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD4DBC6E21E4059500992DB6 /* HybridPool */,
+				DD4DBC8921E4059C00992DB6 /* HybridPoolTests */,
+				DD4DBC9421E4059C00992DB6 /* HybridPoolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD4DBC6D21E4059500992DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4DBC8221E4059B00992DB6 /* LaunchScreen.storyboard in Resources */,
+				DD4DBC7F21E4059B00992DB6 /* Assets.xcassets in Resources */,
+				DD4DBC7D21E4059500992DB6 /* Main.storyboard in Resources */,
+				DD76A70F21E5539C007CC27E /* PoolsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD4DBC8821E4059C00992DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD4DBC9321E4059C00992DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		016E1279FEFC5949BFE5E0A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HybridPoolUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44A696832C4076112A483D84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HybridPool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49A014EA3C35D79FC55F45CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HybridPool/Pods-HybridPool-resources.sh",
+				"${PODS_ROOT}/phonegap-ios-template/resources/config.xml",
+				"${PODS_ROOT}/phonegap-ios-template/resources/www",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/config.xml",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/www",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HybridPool/Pods-HybridPool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B913051800B8F2A0BA0BD6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HybridPoolUITests/Pods-HybridPoolUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A209CC12797477DB0DB6AFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HybridPoolTests/Pods-HybridPoolTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7247E6724B699CB1C1BB394C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HybridPool/Pods-HybridPool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80CCB26DFAC14C71C8413448 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HybridPoolUITests/Pods-HybridPoolUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B04534B3C7BFD62509EA2B02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HybridPoolTests/Pods-HybridPoolTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8845E7D9C9159879DFCDF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HybridPoolTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD4DBC6B21E4059500992DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2899E221E6EE9100601AA2 /* ListPlugin.m in Sources */,
+				DD76A70E21E5539C007CC27E /* PoolsTableViewCell.m in Sources */,
+				DD4DBC7A21E4059500992DB6 /* SecondViewController.m in Sources */,
+				DD4DBC7421E4059500992DB6 /* AppDelegate.m in Sources */,
+				DD4DBC8521E4059C00992DB6 /* main.m in Sources */,
+				DD4DBC7721E4059500992DB6 /* PoolsTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD4DBC8621E4059C00992DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4DBC8F21E4059C00992DB6 /* HybridPoolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD4DBC9121E4059C00992DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4DBC9A21E4059C00992DB6 /* HybridPoolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD4DBC8C21E4059C00992DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD4DBC6E21E4059500992DB6 /* HybridPool */;
+			targetProxy = DD4DBC8B21E4059C00992DB6 /* PBXContainerItemProxy */;
+		};
+		DD4DBC9721E4059C00992DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD4DBC6E21E4059500992DB6 /* HybridPool */;
+			targetProxy = DD4DBC9621E4059C00992DB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD4DBC7B21E4059500992DB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD4DBC7C21E4059500992DB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD4DBC8021E4059B00992DB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD4DBC8121E4059B00992DB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD4DBC9C21E4059C00992DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD4DBC9D21E4059C00992DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD4DBC9F21E4059C00992DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D988264AD14D7C08A9062F /* Pods-HybridPool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				INFOPLIST_FILE = HybridPool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.pool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD4DBCA021E4059C00992DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1CD42B0862B88A7181724B /* Pods-HybridPool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				INFOPLIST_FILE = HybridPool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.pool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD4DBCA221E4059C00992DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 819EFD6CAC752364FDA22D68 /* Pods-HybridPoolTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				INFOPLIST_FILE = HybridPoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.pool.HybridPoolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HybridPool.app/HybridPool";
+			};
+			name = Debug;
+		};
+		DD4DBCA321E4059C00992DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA5F257185CC20421015183 /* Pods-HybridPoolTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				INFOPLIST_FILE = HybridPoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.pool.HybridPoolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HybridPool.app/HybridPool";
+			};
+			name = Release;
+		};
+		DD4DBCA521E4059C00992DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7DCE77E8F98D1FF0AB8D02A /* Pods-HybridPoolUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				INFOPLIST_FILE = HybridPoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.pool.HybridPoolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HybridPool;
+			};
+			name = Debug;
+		};
+		DD4DBCA621E4059C00992DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AC757A2EAA306C9051F3B2F /* Pods-HybridPoolUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				INFOPLIST_FILE = HybridPoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.pool.HybridPoolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HybridPool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD4DBC6A21E4059500992DB6 /* Build configuration list for PBXProject "HybridPool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4DBC9C21E4059C00992DB6 /* Debug */,
+				DD4DBC9D21E4059C00992DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD4DBC9E21E4059C00992DB6 /* Build configuration list for PBXNativeTarget "HybridPool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4DBC9F21E4059C00992DB6 /* Debug */,
+				DD4DBCA021E4059C00992DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD4DBCA121E4059C00992DB6 /* Build configuration list for PBXNativeTarget "HybridPoolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4DBCA221E4059C00992DB6 /* Debug */,
+				DD4DBCA321E4059C00992DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD4DBCA421E4059C00992DB6 /* Build configuration list for PBXNativeTarget "HybridPoolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD4DBCA521E4059C00992DB6 /* Debug */,
+				DD4DBCA621E4059C00992DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD4DBC6721E4059500992DB6 /* Project object */;
+}
