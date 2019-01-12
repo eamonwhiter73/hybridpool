@@ -6,21 +6,67 @@
 //
 
 #import "ListPlugin.h"
-#import "SecondViewController.h"
-#import "PoolsTableViewController.h"
 
 @implementation ListPlugin
--(void)addItem:(CDVInvokedUrlCommand*) command {
-    NSString* item = [command.arguments objectAtIndex:0];
+
+-(void)getCurrentTabControllerName:(CDVInvokedUrlCommand*) command {
+    NSLog(@"inside getCurrentTabController");
     
-    if(item) {
-        NSLog(@"addItem %@", item);
-        SecondViewController* svc = (SecondViewController*)[self viewController];
-        PoolsTableViewController* ptvc = (PoolsTableViewController*)svc.tabBarController.viewControllers[0];
-        [ptvc.items addObject:item];
-        [ptvc.tableView reloadData];
+    NSString *className = NSStringFromClass([[self viewController] class]);
+    
+    NSLog(@"className: %@", className);
+    
+    CDVViewController* pvc = (CDVViewController*)[self viewController];
+    NSDictionary* dict = @{@"className": className, @"webViewHidden": [NSNumber numberWithBool:[pvc.webView isHidden]]};
+
+    if(className != nil) {
+        CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:dict];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    } else {
+        CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    }
+}
+
+-(void)addPools:(CDVInvokedUrlCommand*) command {
+    NSArray* pools = command.arguments;
+    //NSLog(@"argument: %@", [pools description]);
+    
+    if(pools != nil || pools.count > 0) {
+        NSLog(@"addpools %@", [pools description]);
+
+        if([[self viewController] isKindOfClass:[PoolsTableViewController class]]) {
+            PoolsTableViewController* pvc = (PoolsTableViewController*)[self viewController];
+            [pools enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                [pvc.pools addObject:obj];
+            }];
+            [pvc.tableView reloadData];
+        }
         
-        CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+        CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"pools"];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    } else {
+        CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    }
+}
+
+-(void)addItems:(CDVInvokedUrlCommand*) command {
+    NSArray* items = command.arguments;
+    //NSLog(@"argument: %@", [pools description]);
+    
+    if(items != nil || items.count > 0) {
+        NSLog(@"addpools %@", [items description]);
+        
+        if([[self viewController] isKindOfClass:[PoolTableViewController class]]) {
+            PoolTableViewController* poolvc = (PoolTableViewController*)[self viewController].tabBarController.viewControllers[1];
+            [items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                [poolvc.items addObject:obj];
+            }];
+            [poolvc.tableView reloadData];
+        }
+
+        CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"pool"];
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
     } else {
         CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];

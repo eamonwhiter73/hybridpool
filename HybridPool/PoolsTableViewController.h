@@ -1,16 +1,20 @@
 //
-//  MyTableViewController.h
-//  HybridIOSApp
+//  SecondViewController.h
+//  HybridPool
 //
-//  Created by Holly Schinsky on 6/25/15.
-//
+//  Created by Eamon White on 1/7/19.
+//  Copyright © 2019 Eamon White. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "CDVViewController.h"
 #import "PoolsTableViewCell.h"
 
-@interface PoolsTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface PoolsTableViewController : CDVViewController {
+    CGPoint* lastTouch;
+}
 
-@property (nonatomic,strong) NSMutableArray* items;
+@property (nonatomic,strong) NSMutableArray* pools;
 
 @end
+

@@ -11,9 +11,10 @@
 		56F7C716C785DA024565EF71 /* libPods-HybridPoolTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AAA9C03B840E24DF87A342 /* libPods-HybridPoolTests.a */; };
 		9215FE377AE0DA1B44D1DF92 /* libPods-HybridPool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B91C2BAE76C0ABD7E3D903 /* libPods-HybridPool.a */; };
 		DD2899E221E6EE9100601AA2 /* ListPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2899E121E6EE9000601AA2 /* ListPlugin.m */; };
+		DD46DD5D21E921DB00D05D5F /* ItemViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DD46DD5C21E921DB00D05D5F /* ItemViewPlugin.m */; };
 		DD4DBC7421E4059500992DB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC7321E4059500992DB6 /* AppDelegate.m */; };
-		DD4DBC7721E4059500992DB6 /* PoolsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC7621E4059500992DB6 /* PoolsTableViewController.m */; };
-		DD4DBC7A21E4059500992DB6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC7921E4059500992DB6 /* SecondViewController.m */; };
+		DD4DBC7721E4059500992DB6 /* PoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC7621E4059500992DB6 /* PoolTableViewController.m */; };
+		DD4DBC7A21E4059500992DB6 /* PoolsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DBC7921E4059500992DB6 /* PoolsTableViewController.m */; };
 		DD4DBC7D21E4059500992DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4DBC7B21E4059500992DB6 /* Main.storyboard */; };
 		DD4DBC7F21E4059B00992DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4DBC7E21E4059B00992DB6 /* Assets.xcassets */; };
 		DD4DBC8221E4059B00992DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4DBC8021E4059B00992DB6 /* LaunchScreen.storyboard */; };
@@ -53,13 +54,15 @@
 		CB1CD42B0862B88A7181724B /* Pods-HybridPool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HybridPool.release.xcconfig"; path = "Pods/Target Support Files/Pods-HybridPool/Pods-HybridPool.release.xcconfig"; sourceTree = "<group>"; };
 		DD2899E021E6EE9000601AA2 /* ListPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPlugin.h; sourceTree = "<group>"; };
 		DD2899E121E6EE9000601AA2 /* ListPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPlugin.m; sourceTree = "<group>"; };
+		DD46DD5B21E921DB00D05D5F /* ItemViewPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemViewPlugin.h; sourceTree = "<group>"; };
+		DD46DD5C21E921DB00D05D5F /* ItemViewPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemViewPlugin.m; sourceTree = "<group>"; };
 		DD4DBC6F21E4059500992DB6 /* HybridPool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridPool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4DBC7221E4059500992DB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD4DBC7321E4059500992DB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD4DBC7521E4059500992DB6 /* PoolsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoolsTableViewController.h; sourceTree = "<group>"; };
-		DD4DBC7621E4059500992DB6 /* PoolsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoolsTableViewController.m; sourceTree = "<group>"; };
-		DD4DBC7821E4059500992DB6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		DD4DBC7921E4059500992DB6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		DD4DBC7521E4059500992DB6 /* PoolTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoolTableViewController.h; sourceTree = "<group>"; };
+		DD4DBC7621E4059500992DB6 /* PoolTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoolTableViewController.m; sourceTree = "<group>"; };
+		DD4DBC7821E4059500992DB6 /* PoolsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoolsTableViewController.h; sourceTree = "<group>"; };
+		DD4DBC7921E4059500992DB6 /* PoolsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoolsTableViewController.m; sourceTree = "<group>"; };
 		DD4DBC7C21E4059500992DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD4DBC7E21E4059B00992DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD4DBC8121E4059B00992DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -156,10 +159,10 @@
 				DD2899E121E6EE9000601AA2 /* ListPlugin.m */,
 				DD4DBC7221E4059500992DB6 /* AppDelegate.h */,
 				DD4DBC7321E4059500992DB6 /* AppDelegate.m */,
-				DD4DBC7521E4059500992DB6 /* PoolsTableViewController.h */,
-				DD4DBC7621E4059500992DB6 /* PoolsTableViewController.m */,
-				DD4DBC7821E4059500992DB6 /* SecondViewController.h */,
-				DD4DBC7921E4059500992DB6 /* SecondViewController.m */,
+				DD4DBC7521E4059500992DB6 /* PoolTableViewController.h */,
+				DD4DBC7621E4059500992DB6 /* PoolTableViewController.m */,
+				DD4DBC7821E4059500992DB6 /* PoolsTableViewController.h */,
+				DD4DBC7921E4059500992DB6 /* PoolsTableViewController.m */,
 				DD4DBC7B21E4059500992DB6 /* Main.storyboard */,
 				DD4DBC7E21E4059B00992DB6 /* Assets.xcassets */,
 				DD4DBC8021E4059B00992DB6 /* LaunchScreen.storyboard */,
@@ -168,6 +171,8 @@
 				DD76A70B21E5539C007CC27E /* PoolsTableViewCell.h */,
 				DD76A70C21E5539C007CC27E /* PoolsTableViewCell.m */,
 				DD76A70D21E5539C007CC27E /* PoolsTableViewCell.xib */,
+				DD46DD5B21E921DB00D05D5F /* ItemViewPlugin.h */,
+				DD46DD5C21E921DB00D05D5F /* ItemViewPlugin.m */,
 			);
 			path = HybridPool;
 			sourceTree = "<group>";
@@ -484,10 +489,11 @@
 			files = (
 				DD2899E221E6EE9100601AA2 /* ListPlugin.m in Sources */,
 				DD76A70E21E5539C007CC27E /* PoolsTableViewCell.m in Sources */,
-				DD4DBC7A21E4059500992DB6 /* SecondViewController.m in Sources */,
+				DD4DBC7A21E4059500992DB6 /* PoolsTableViewController.m in Sources */,
+				DD46DD5D21E921DB00D05D5F /* ItemViewPlugin.m in Sources */,
 				DD4DBC7421E4059500992DB6 /* AppDelegate.m in Sources */,
 				DD4DBC8521E4059C00992DB6 /* main.m in Sources */,
-				DD4DBC7721E4059500992DB6 /* PoolsTableViewController.m in Sources */,
+				DD4DBC7721E4059500992DB6 /* PoolTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
